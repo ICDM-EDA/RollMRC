@@ -1,0 +1,7 @@
+set sample_step 20
+load data/post_opc_alu_M1.poly
+set space 50
+set width 50
+set bend 10
+set min_area 10000
+check minarea

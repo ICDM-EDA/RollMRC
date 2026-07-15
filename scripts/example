@@ -1,4 +1,4 @@
-set sample_step 20
+set sample_step 2
 load data/post_opc_alu_M1.poly
 set space 50
 set width 50

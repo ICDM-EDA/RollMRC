@@ -12,7 +12,8 @@ target machine; use `run.sh` to load the bundled `.so` files automatically.
 ├── run.sh           # launcher; sets LD_LIBRARY_PATH to ./lib
 ├── lib/             # bundled shared libraries
 ├── scripts/example  # example checking script
-└── data/            # the 22 layouts used in the paper
+├── data/            # the 22 layouts used in the paper
+└── THIRD_PARTY_NOTICES.md
 ```
 
 ## Quick Start
@@ -88,6 +89,8 @@ runs all four rules on one ALU layout.
 - Always run the package through `./run.sh` unless you manually set
   `LD_LIBRARY_PATH=./lib`.
 - This binary package is intended for Linux x86_64 systems with a compatible
-  glibc version.
+  glibc version (2.27 or newer: Ubuntu 18.10+, Debian 10+, RHEL/CentOS 8+).
 - The bundled binary is built for the x86-64-v2 baseline, so it runs on any
   x86-64 CPU made in the last decade rather than only on the build machine.
+- The bundled third-party libraries keep their upstream licenses; see
+  `THIRD_PARTY_NOTICES.md`.
